@@ -3,7 +3,9 @@ import MainLayout from "../../layout/MainLayout";
 
 const BoardRegisterPage = () => {
   return (
-      <MainLayout><BoardReadContainer/></MainLayout>
+      <MainLayout>
+        <BoardReadContainer/>
+      </MainLayout>
   )
 }
 

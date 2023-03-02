@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import NoticeModifyContainer from "../../containers/notice/NoticeModifyContainer";
 
-const NoticeModifyPage = () => {
+const NoticeModifyPage = ({ match }) => {
+    const { noticeNo } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <NoticeModifyContainer noticeNo={noticeNo}/>
+        </MainLayout>
     )
 }
 export default NoticeModifyPage

@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import ItemListContainer from "../../containers/item/ItemListContainer";
 
 const ItemListPage = () => {
   return (
-      <MainLayout>123</MainLayout>
+      <MainLayout>
+        <ItemListContainer/>
+      </MainLayout>
   )
 }
 

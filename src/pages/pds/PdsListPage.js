@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import PdsListContainer from "../../containers/pds/PdsListContainer";
 
 const PdsListPage = () => {
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <PdsListContainer/>
+        </MainLayout>
     )
 }
 

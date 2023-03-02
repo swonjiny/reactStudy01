@@ -4,11 +4,13 @@ const BoardModifyForm = ({ board, isLoading, onModify, myInfo }) => {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
 
-    const handleChangeTitle = (e) => {
+    const isOwn = myInfo.userId === board.writer
+
+    const handleChangeTitle = e => {
         setTitle(e.target.value);
     };
 
-    const handleChangeContent = (e) => {
+    const handleChangeContent = e => {
         setContent(e.target.value);
     };
 

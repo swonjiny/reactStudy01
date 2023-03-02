@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import MemberReadContainer from "../../containers/member/MemberReadContainer";
 
-const MemberReadPage = () => {
+const MemberReadPage = ({ match }) => {
+    const { userNo } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <MemberReadContainer userNo={userNo} />
+        </MainLayout>
     )
 }
 

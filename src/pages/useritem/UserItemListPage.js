@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import UserItemListContainer from "../../containers/useritem/UserItemListContainer";
 
 const UserItemListPage = () => {
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <UserItemListContainer/>
+        </MainLayout>
     )
 }
 export default UserItemListPage

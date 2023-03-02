@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import MemberListContainer from "../../containers/member/MemberListContainer";
 
 const MemberListPage = () => {
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <MemberListContainer/>
+        </MainLayout>
     )
 }
 

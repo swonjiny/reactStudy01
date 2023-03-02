@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import UserItemReadContainer from "../../containers/useritem/UserItemReadContainer";
 
-const UserItemReadPage = () => {
+const UserItemReadPage = ({ match }) => {
+    const { userItemNo } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <UserItemReadContainer userItemNo={userItemNo}/>
+        </MainLayout>
     )
 }
 

@@ -1,5 +1,5 @@
 import MainLayout from "../../layout/MainLayout";
-import AdminSetupContainer from "../../containers/AdminSetupContainer";
+import AdminSetupContainer from "../../containers/member/AdminSetupContainer";
 
 function AdminSetupPage() {
     return (

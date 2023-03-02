@@ -3,18 +3,16 @@ function SignInForm({ onSignIn }) {
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleChangeUserId = useCallback((e) => {
+    const handleChangeUserId = useCallback(e => {
         setUserId(e.target.value);
     }, []);
 
-    const handleChangePassword = useCallback((e) => {
+    const handleChangePassword = useCallback(e => {
         setPassword(e.target.value);
     }, []);
 
-    const handleSubmit = useCallback(
-        (e) => {
+    const handleSubmit = useCallback(e => {
             e.preventDefault();
-
             onSignIn(userId, password);
         },
         [userId, password, onSignIn]

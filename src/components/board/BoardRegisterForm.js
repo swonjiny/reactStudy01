@@ -1,4 +1,4 @@
-import {useCallback} from "react";
+import {useCallback, useState} from "react";
 import {Link} from "react-router-dom";
 
 const BoardRegisterForm = ({onRegister}) => {
@@ -8,7 +8,7 @@ const BoardRegisterForm = ({onRegister}) => {
     const handleChangeTitle = useCallback(e=>{
         setTitle(e.target.value)
     },[]);
-    const handleChangeContent = useCallback((e) => {
+    const handleChangeContent = useCallback(e => {
         setContent(e.target.value);
     }, []);
     const handleSubmit = useCallback(e=>{

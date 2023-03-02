@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import ItemModifyContainer from "../../containers/item/ItemModifyContainer";
 
-const ItemModifyPage = () => {
+const ItemModifyPage = ({ match }) => {
+  const { itemId } = match.params;
   return (
-      <MainLayout>123</MainLayout>
+      <MainLayout>
+        <ItemModifyContainer itemId={itemId}/>
+      </MainLayout>
   )
 }
 

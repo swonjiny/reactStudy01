@@ -1,9 +1,12 @@
 import CodeGroupReadContainer from "../../containers/codegroup/CodeGroupReadContainer";
 import MainLayout from "../../layout/MainLayout";
 
-const CodeGroupReadPage = () => {
+const CodeGroupReadPage = ({match}) => {
+  const { groupCode } = match.params;
   return(
-      <MainLayout><CodeGroupReadContainer/></MainLayout>
+      <MainLayout>
+        <CodeGroupReadContainer groupCode={groupCode}/>
+      </MainLayout>
   )
 }
 

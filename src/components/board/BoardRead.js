@@ -2,13 +2,13 @@ import {Link} from "react-router-dom";
 
 const BoardRead = ({ board, isLoading, boardNo, onRemove, myInfo }) => {
 
-    const isOwn = (myInfo && board && myInfo.userId === board.writer ? true : false )
-    const isAdmin = (myInfo && myInfo.authList[0].auth === "ROLE_ADMIN") ? true : false;
+    const isOwn = myInfo.userId === board.writer
+    const isAdmin = (myInfo && myInfo.authList[0].auth === "ROLE_ADMIN");
 
     return (
         <div align="center">
             <h2>게시판 상세보기</h2>
-            {isLoading && "로딩중..."}
+            {isLoading && "로딩."}
             {isLoading && board && (
                 <>
                     <table>

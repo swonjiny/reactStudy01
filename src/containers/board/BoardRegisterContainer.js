@@ -1,11 +1,18 @@
 import BoardRegisterForm from "../../components/board/BoardRegisterForm";
-
-const BoardRegisterContainer = () => {
+import * as api from "../../lib/api";
+import {withRouter} from "react-router-dom";
+const BoardRegisterContainer = ({ history }) => {
+    const onRegister = async (title, content) => {
+        try {
+            const response = await api.writeBoard(title, content);
+            history.push("/board/read/" + response.data.boardNo);
+        } catch (e) {
+            console.error(e)
+        }
+    };
     return (
-        <div>
-            <BoardRegisterForm/>
-        </div>
+        <BoardRegisterForm onRegister={onRegister}/>
     )
 }
 
-export default BoardRegisterContainer
+export default withRouter(BoardRegisterContainer);

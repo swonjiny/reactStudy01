@@ -1,3 +1,5 @@
+// 요부부은 다른곳에서도 재사용
+
 import { createAction } from "redux-actions";
 import { call, put } from 'redux-saga/effects';
 import { startLoading, endLoading } from '../modules/loading';

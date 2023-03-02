@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import NoticeListContainer from "../../containers/notice/NoticeListContainer";
 
 const NoticeListPage = () => {
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <NoticeListContainer/>
+        </MainLayout>
     )
 }
 

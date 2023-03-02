@@ -1,8 +1,11 @@
 import MainLayout from "../../layout/MainLayout";
+import PdsRegisterContainer from "../../containers/pds/PdsRegisterContainer";
 
 const PdsRegisterPage = () => {
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <PdsRegisterContainer/>
+        </MainLayout>
     )
 }
 

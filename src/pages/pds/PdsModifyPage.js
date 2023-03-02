@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import PdsModifyContainer from "../../containers/pds/PdsModifyContainer";
 
-const PdsModifyPage = () => {
+const PdsModifyPage = ({ match }) => {
+    const { itemId } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <PdsModifyContainer itemId={itemId}/>
+        </MainLayout>
     )
 }
 export default PdsModifyPage

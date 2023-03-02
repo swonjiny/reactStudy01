@@ -1,10 +1,11 @@
 import BoardModifyContainer from "../../containers/board/BoardModifyContainer";
 import MainLayout from "../../layout/MainLayout";
 
-const BoardModifyPage = () => {
+const BoardModifyPage = ({ match }) => {
+    const {boardNo} = match.params
     return (
         <MainLayout>
-            <BoardModifyContainer/>
+            <BoardModifyContainer boardNo={boardNo}/>
         </MainLayout>
     )
 }

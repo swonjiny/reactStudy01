@@ -3,7 +3,9 @@ import CodeDetailRegisterContainer from "../../containers/codedetail/CodeDetailR
 
 const CodeDetailRegisterPage = () => {
   return (
-      <MainLayout><CodeDetailRegisterContainer/></MainLayout>
+      <MainLayout>
+        <CodeDetailRegisterContainer/>
+      </MainLayout>
   )
 }
 

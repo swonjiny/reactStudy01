@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import MemberModifyContainer from "../../containers/member/MemberModifyContainer";
 
-const MemberModifyPage = () => {
+const MemberModifyPage = ({ match }) => {
+    const { userNo } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout>
+            <MemberModifyContainer userNo={userNo} />
+        </MainLayout>
     )
 }
 

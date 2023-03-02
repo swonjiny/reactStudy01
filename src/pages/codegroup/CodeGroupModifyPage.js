@@ -1,10 +1,11 @@
 import CodeGroupModifyContainer from "../../containers/codegroup/CodeGroupModifyContainer";
 import MainLayout from "../../layout/MainLayout";
 
-const CodeGroupModifyPage = () => {
+const CodeGroupModifyPage = ({match}) => {
+    const { groupCode } = match.params
   return (
       <MainLayout>
-        <CodeGroupModifyContainer/>
+        <CodeGroupModifyContainer groupCode={groupCode}/>
       </MainLayout>
   )
 }

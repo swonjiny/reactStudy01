@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const ItemRead = ({item, isLoading, itemId, onRemove, isAdmin, onBuy}) => {
     const previewUrl = () => {
         return (

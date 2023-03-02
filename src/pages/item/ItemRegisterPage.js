@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import ItemRegisterContainer from "../../containers/item/ItemRegisterContainer";
 
 const ItemRegisterPage = () => {
+
   return (
-      <MainLayout>123</MainLayout>
+      <MainLayout>
+        <ItemRegisterContainer/>
+      </MainLayout>
   )
 }
 

@@ -3,7 +3,9 @@ import MainLayout from "../../layout/MainLayout";
 
 const CodeDetailListPage = () => {
   return (
-      <MainLayout><CodeDetailListContainer/></MainLayout>
+      <MainLayout>
+        <CodeDetailListContainer/>
+      </MainLayout>
   )
 }
 export default CodeDetailListPage

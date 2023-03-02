@@ -1,8 +1,12 @@
 import MainLayout from "../../layout/MainLayout";
+import PdsReadContainer from "../../containers/pds/PdsReadContainer";
 
-const PdsReadPage = () => {
+const PdsReadPage = ({ match }) => {
+    const { itemId } = match.params;
     return (
-        <MainLayout>123</MainLayout>
+        <MainLayout >
+            <PdsReadContainer itemId={itemId}/>
+        </MainLayout>
     )
 }
 
